@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cfb305db23.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+         <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contacts</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         </nav>  
+         <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm </span>Diogo</span><br>A Software Developer from Portugal</h1>
+         </div>
+        </div>
+        </div>
+    <!-- -----------------about---------------  -->
+    <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/images/user1.JPG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Hello, and welcome to my portfolio website! My name is Diogo Alves. I'm a computer science student striving to become a software developer. I've worked in the industry before, and now I'm looking to take my career even further. Feel free to check out my projects by clicking on the portfolio!</p>
+            
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+               </div>
+               <div class="tab-contents active-tab", id="skills">
+                <ul>
+                    <li><span>Programming Languages</span><br>Coding proficiency in  Python, Java, C, C++, Html, css.</li>
+                    <li><span>Testing & Debugging</span><br>Writing unit tests and debugging efficiently.</li>
+                    <li><span>Databases</span><br>Experience with SQL (PostgreSQL, MySQL) and NoSQL (MongoDB, Firebase).</li>
+                    <li><span>Web Development</span><br>Websites and Webapps Development</li>
+                </ul>
+               </div>
+               <div class="tab-contents", id="experience">
+                <ul>
+                    <li><span>2024-2024</span><br>Freelance Software Developer</li>
+                </ul>
+               </div>
+               <div class="tab-contents", id="education">
+                <ul>
+                    <li><span>2023 - Current</span><br>Bachelor in Computer Science University of Minho Portugal</li>
+                </ul>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------services------------------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Software Development</h2>
+                <p>Custom software development <b>Web application development </b>Mobile app development <b>Desktop application development</b></p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-connectdevelop"></i>
+                <h2>Website Development & Maintenance</h2>
+                <p>Full-stack website development<b>WordPress or CMS-based website creation </b>Website optimization & performance tuning <b>Bug fixing and troubleshooting</b></p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Management</h2>
+                <p>Database design & architecture <b>SQL & NoSQL database optimization </b>Data migration & backup solutions <b></p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------Portfolio---------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/images/image1.png">
+                <div class="layer">
+                    <h3>HighSchool Webapp/websitte</h3>
+                    <p>This website was created for Castelo da Maia High School and is fully functional for both students and teachers. Users can stay updated with the latest news, purchase meals, and even check their grades—all in one place.</p>
+                    <a href="https://aecmapi12c.webnode.pt/a-nossa-escola/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="">
+            </div>
+            <div class="work">
+                <img src="">
+            </div>
+        </div>
+     </div>
+     <a href="#" class="btn">See more</a>
+  </div>
+</div>
+<!----------------------Contact---------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>digo83389@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+351 939771570</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/dalves_28/"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/diogo-alves-06989b273/"> <i class="fa-brands fa-linkedin"></i> </a>
+                    <a href="https://www.facebook.com/profile.php?id=100009705280838&locale=pt_PT"><i class="fa-brands fa-facebook"></i> </a>
+                </div>
+                <a href="/images/Devoloper Cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                 <input type="text" name="Name" placeholder="Your name" required>
+                 <input type="email" name="email" placeholder="Your Email" required>
+                 <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                 <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Diogo. Made by Diogo Alves</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL ='https://script.google.com/macros/s/AKfycbyRXj2UKJs2fcQTNnoaI4oJURnWjxsYAzRKSI2kWis3/devhttps://script.google.com/macros/s/AKfycbzBwfvYnlLBDR0wHTxtG7A16rh7yg_DptcnAiKrNOk9eEgP-0EvfVFBVhu3eP73nHilBQ/exec'
+    const form =document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    </body>
+    </html>
