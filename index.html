@@ -177,15 +177,16 @@
     }
 </script>
 <script>
-    const scriptURL ='https://script.google.com/macros/s/AKfycbyq53MmmFIbxTDrCMRYk7J7S19m_V2Jx7A87GSWAvCzDFrvx_25RB3kfZS9SAv2N5ImPw/exec'
-    const form =document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby_P_XTlypAppWM8-JAabbJQNgBwN35R3uUaoPDG0IaWxQMr3fsj3w2JgNPyI68z_VP2A/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
     </body>
     </html>
